@@ -6,14 +6,24 @@
  * @param  {String}   element Element selector
  * @param  {Function} done    Function to execute when finished
  */
-module.exports = (method, value, element, done) => {
+module.exports = (value, element, done) => {
     /**
      * The command to perform on the browser object (addValue or setValue)
      * @type {String}
      */
-    const command = (method === 'add') ? 'addValue' : 'setValue';
+    const command = 'setValue';
 
-    browser[command](element, value);
+    /**
+     * Convert element to id
+     */
+    console.log(element.toString());
+    if(element != null){
+        if(!element.startsWith('#')){
+            element = '#' + element.toLowerCase().replace(/ /g,"-");
+        }
+    }
+
+    browser['setValue'](element, value);
 
     done();
 };

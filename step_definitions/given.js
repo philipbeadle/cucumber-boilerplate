@@ -1,24 +1,24 @@
-import openWebsite from '../support/action/openWebsite';
-import isVisible from '../support/check/isVisible';
-import isEnabled from '../support/check/isEnabled';
-import checkSelected from '../support/check/checkSelected';
-import checkElementExists from '../support/check/checkElementExists';
-import checkTitle from '../support/check/checkTitle';
-import compareText from '../support/check/compareText';
-import checkContent from '../support/check/checkContent';
-import checkUrl from '../support/check/checkURL';
-import checkProperty from '../support/check/checkProperty';
-import checkCookieContent from '../support/check/checkCookieContent';
-import checkCookieExists from '../support/check/checkCookieExists';
-import checkDimension from '../support/check/checkDimension';
-import checkOffset from '../support/check/checkOffset';
-import resizeScreenSize from '../support/action/resizeScreenSize';
-import closeAllButFirstTab from '../support/action/closeAllButFirstTab';
-import checkModal from '../support/check/checkModal';
+import openWebsite from './support/action/openWebsite';
+import isVisible from './support/check/isVisible';
+import isEnabled from './support/check/isEnabled';
+import checkSelected from './support/check/checkSelected';
+import checkElementExists from './support/check/checkElementExists';
+import checkTitle from './support/check/checkTitle';
+import compareText from './support/check/compareText';
+import checkContent from './support/check/checkContent';
+import checkUrl from './support/check/checkURL';
+import checkProperty from './support/check/checkProperty';
+import checkCookieContent from './support/check/checkCookieContent';
+import checkCookieExists from './support/check/checkCookieExists';
+import checkDimension from './support/check/checkDimension';
+import checkOffset from './support/check/checkOffset';
+import resizeScreenSize from './support/action/resizeScreenSize';
+import closeAllButFirstTab from './support/action/closeAllButFirstTab';
+import checkModal from './support/check/checkModal';
 
 module.exports = function given() {
     this.Given(
-        /^I open the (url|site) "([^"]*)?"$/,
+        /^Open the (url|site) "([^"]*)?"$/,
         openWebsite
     );
 

@@ -1,29 +1,29 @@
-import checkTitle from '../support/check/checkTitle';
-import isVisible from '../support/check/isVisible';
-import waitForVisible from '../support/action/waitForVisible';
-import checkContainsText from '../support/check/checkContainsText';
-import checkContent from '../support/check/checkContent';
-import compareText from '../support/check/compareText';
-import isExisting from '../support/check/isExisting';
-import checkWithinViewport from '../support/check/checkWithinViewport';
-import checkURL from '../support/check/checkURL';
-import checkURLPath from '../support/check/checkURLPath';
-import checkInURLPath from '../support/check/checkInURLPath';
-import checkProperty from '../support/check/checkProperty';
-import checkSelected from '../support/check/checkSelected';
-import isEnabled from '../support/check/isEnabled';
-import checkCookieContent from '../support/check/checkCookieContent';
-import checkCookieExists from '../support/check/checkCookieExists';
-import checkDimension from '../support/check/checkDimension';
-import checkOffset from '../support/check/checkOffset';
-import checkClass from '../support/check/checkClass';
-import checkNewWindow from '../support/check/checkNewWindow';
+import checkTitle from './support/check/checkTitle';
+import isVisible from './support/check/isVisible';
+import waitForVisible from './support/action/waitForVisible';
+import checkContainsText from './support/check/checkContainsText';
+import checkContent from './support/check/checkContent';
+import compareText from './support/check/compareText';
+import isExisting from './support/check/isExisting';
+import checkWithinViewport from './support/check/checkWithinViewport';
+import checkURL from './support/check/checkURL';
+import checkURLPath from './support/check/checkURLPath';
+import checkInURLPath from './support/check/checkInURLPath';
+import checkProperty from './support/check/checkProperty';
+import checkSelected from './support/check/checkSelected';
+import isEnabled from './support/check/isEnabled';
+import checkCookieContent from './support/check/checkCookieContent';
+import checkCookieExists from './support/check/checkCookieExists';
+import checkDimension from './support/check/checkDimension';
+import checkOffset from './support/check/checkOffset';
+import checkClass from './support/check/checkClass';
+import checkNewWindow from './support/check/checkNewWindow';
 import checkIsOpenedInNewWindow from
-    '../support/check/checkIsOpenedInNewWindow';
-import checkFocus from '../support/check/checkFocus';
-import waitfor from '../support/action/waitfor';
-import checkModal from '../support/check/checkModal';
-import checkModalText from '../support/check/checkModalText';
+    './support/check/checkIsOpenedInNewWindow';
+import checkFocus from './support/check/checkFocus';
+import waitfor from './support/action/waitfor';
+import checkModal from './support/check/checkModal';
+import checkModalText from './support/check/checkModalText';
 
 module.exports = function then() {
     this.Then(
