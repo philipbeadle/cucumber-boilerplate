@@ -20,6 +20,7 @@ module.exports = (() => {
             const collectedTags = val.replace('--tags=', '');
 
             tags = tags.concat(collectedTags);
+            console.log(tags);
         }
     });
 
