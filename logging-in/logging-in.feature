@@ -8,7 +8,7 @@ Feature: Getting secure access to the site
         * Type "<password>" into "Password"
         * Click the button "Login"
 
-    @phil
+
         Examples:
             | user-name     | password  |
             | philip.beadle | password1 |

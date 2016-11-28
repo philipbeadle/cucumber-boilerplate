@@ -26,10 +26,6 @@ import checkModal from './support/check/checkModal';
 import checkModalText from './support/check/checkModalText';
 
 module.exports = function then() {
-    this.Then(
-        /^I expect that the title is( not)* "([^"]*)?"$/,
-        checkTitle
-    );
 
     this.Then(
         /^I expect that element "([^"]*)?" is( not)* visible$/,
@@ -59,6 +55,17 @@ module.exports = function then() {
     this.Then(
         /^I expect that (element|inputfield) "([^"]*)?"( not)* contains the text "([^"]*)?"$/,
         checkContent
+    );
+
+    this.Then(
+        /^I expect that (element|inputfield) "([^"]*)?"( not)* contains the text "([^"]*)?"$/,
+        checkContent
+    );
+
+    this.Then(
+        /^You will see "([^"]*)?"$/,function(text, done){
+            return checkContent('element','header h1', false, text, done)
+        }
     );
 
     this.Then(

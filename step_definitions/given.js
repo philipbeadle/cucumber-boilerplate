@@ -48,7 +48,7 @@ module.exports = function given() {
     );
 
     this.Given(
-        /^the title is( not)* "([^"]*)?"$/,
+        /^The title is( not)* "([^"]*)?"$/,
         checkTitle
     );
 

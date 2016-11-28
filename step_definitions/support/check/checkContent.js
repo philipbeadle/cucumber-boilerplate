@@ -8,6 +8,11 @@
  * @param  {Function} done          Function to execute when finished
  */
 module.exports = (type, element, falseCase, expectedText, done) => {
+//     console.log(type);
+//     console.log(element);
+//      console.log(falseCase);
+//     console.log(expectedText);
+//     console.log();
     /**
      * The command to execute on the browser object
      * @type {String}
@@ -31,7 +36,6 @@ module.exports = (type, element, falseCase, expectedText, done) => {
      * @type {Boolean}
      */
     let boolFalseCase = !!falseCase;
-
     // Check for empty element
     if (!doneCallback && typeof parsedExpectedText === 'function') {
         doneCallback = parsedExpectedText;
@@ -44,9 +48,9 @@ module.exports = (type, element, falseCase, expectedText, done) => {
         parsedExpectedText = '';
         boolFalseCase = true;
     }
-
+    console.log(falseCase);
+    console.log(boolFalseCase);
     const text = browser[command](element);
-
     if (boolFalseCase) {
         parsedExpectedText.should.not.equal(text);
     } else {
