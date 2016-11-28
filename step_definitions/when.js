@@ -18,7 +18,7 @@ import moveToElement from './support/action/moveToElement';
 
 module.exports = function when() {
     this.When(
-        /^I (click|doubleclick) on the (link|button|element) "([^"]*)?"$/,
+        /^(Click|Doubleclick) the (link|button|element) "([^"]*)?"$/,
         clickElement
     );
 
